@@ -110,7 +110,22 @@ body {
 	justify-content: center;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
+	body {
+		background-image: url("https://cdn.pixabay.com/photo/2020/08/28/07/40/waterfall-5523833_1280.jpg");
+	}
+	.mainImage {
+		display: none;
+		
+	}
+	.threeBoxLayout {
+		display: flex;
+		width: 100%;
+		grid-template-columns: 100%;
+		flex-direction: column;
+		
+	}
 	
+
 }
 
