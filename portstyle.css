@@ -57,7 +57,7 @@ section.mainImage {
 	display: grid;
 	display: flex;
 	grid-template-columns: 33.3% 33.3% 33.3%;
-	margin: 20px 0px;
+	margin: 20px 20%;
 }
 
 
