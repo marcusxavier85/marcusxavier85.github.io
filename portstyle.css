@@ -35,6 +35,12 @@ body {
 	padding: 15px;
 }
 
+.container {
+	display: flex;
+	width: 800px;
+	margin: 0 auto;
+}
+
 
 section.mainImage {
 	display: flex;
@@ -43,14 +49,9 @@ section.mainImage {
 }
 
 .scenicPhoto {
-	
+	width: 100%;
 }
 
-.container {
-	display: flex;
-	width: 800px;
-	margin: 0 auto;
-}
 
 .threeBoxLayout {
 	display: grid;
