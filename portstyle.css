@@ -6,3 +6,30 @@ body {
 	padding: 0;
 	margin: 0;
 }
+
+.navigationBar {
+	display: flex;
+	justify-content: space-around;
+	background-color: grey;
+}
+
+.navigationButtons {
+	display: flex;
+	flex-direction: row;
+	
+}
+
+.home {
+	padding: 15px;
+}
+
+.about {
+	padding: 15px;
+}
+.portfolio {
+	padding: 15px;
+}
+
+.socials {
+	padding: 15px;
+}
