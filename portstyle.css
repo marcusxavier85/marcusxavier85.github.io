@@ -12,6 +12,7 @@ body {
 	justify-content: space-around;
 	background-color: grey;
 	align-items: baseline;
+	position: fixed;
 }
 
 .navigationButtons {
