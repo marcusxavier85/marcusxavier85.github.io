@@ -33,3 +33,15 @@ body {
 .socials {
 	padding: 15px;
 }
+
+
+section.mainImage {
+	display: flex;
+	margin: 0 auto;
+
+}
+
+.scenicPhoto {
+	
+}
+
