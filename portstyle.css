@@ -10,6 +10,7 @@ body {
 .navigationBar {
 	display: flex;
 	justify-content: center;
+	color: white;
 	background-color: none;
 	align-items: baseline;
 	position: fixed;
@@ -68,11 +69,22 @@ body {
 
 .overlayText {
 	position: relative;
-	left: 43%;
-	bottom: 80px;
+	left: 41.5%;
+	bottom: 100px;
+	color: white;
+	border: 1px solid white;
+	padding: 0px 1%;
+	width: 14%;
+}
+
+.secondOverlayText {
+	position: relative;
+	left: 41.5%;
+	bottom: 300px;
 	color: white;
 	border: 1px solid white;
 	padding: 5px 1%;
+	width: 100%;
 }
 
 
