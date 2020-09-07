@@ -13,6 +13,8 @@ body {
 	background-color: grey;
 	align-items: baseline;
 	position: fixed;
+	top: 0;
+	width: 100%;
 }
 
 .navigationButtons {
