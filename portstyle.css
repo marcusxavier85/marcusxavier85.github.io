@@ -45,3 +45,11 @@ section.mainImage {
 	
 }
 
+.threeboxLayout {
+	display: grid;
+	display: flex;
+	width: 800px;
+	grid-template-columns: 33.3% 33.3% 33.3%;
+	margin: 0 auto;
+}
+
