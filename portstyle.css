@@ -48,19 +48,13 @@ section.mainImage {
 .threeBoxLayout {
 	display: grid;
 	display: flex;
-	width: 50%;
 	grid-template-columns: 33.3% 33.3% 33.3%;
 	margin: 0 auto;
 }
 
-.middleBox{
-	display: flex;
-	width: 200px;
-	height: 200px;
-}
 
 .portfolioImage {
-	max-width: 20%;
-	max-height: 20%;
+	max-width: 50%;
+	max-height: 50%;
 }
 
