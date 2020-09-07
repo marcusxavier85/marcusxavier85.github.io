@@ -45,6 +45,10 @@ section.mainImage {
 	
 }
 
+.container {
+	width: 800px;
+}
+
 .threeBoxLayout {
 	display: grid;
 	display: flex;
