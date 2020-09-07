@@ -26,23 +26,23 @@ body {
 	display: flex;
 	flex-direction: row;
 	text-decoration: none;
-	padding-right: 3%;
+	font-size: 2.0rem;
 	
 }
 
 .home {
-	padding: 4px 4px;
+	padding: 4px 20px;
 }
 
 .about {
-	padding: 4px 4px;
+	padding: 4px 20px;
 }
 .portfolio {
-	padding: 4px 4px;
+	padding: 4px 20px;
 }
 
 .socials {
-	padding: 4px 4px;
+	padding: 4px 20px;
 }
 
 .container {
@@ -63,7 +63,7 @@ body {
 
 .mainImage {
 	display: flex;
-	margin: 5% auto;
+	margin: 0 auto;
 	
 }
 
@@ -75,6 +75,7 @@ body {
 	display: grid;
 	grid-template-columns: 30% 70%;
 	margin: 0 20%;
+	margin-top: 5%;
 	height: 300px;
 }
 
@@ -95,12 +96,18 @@ body {
 	max-height: 90%;
 }
 
+.textAboutMe {
+	display: flex;
+	align-items: center;
+}
+
 
 .threeBoxLayout {
 	display: grid;
 	grid-template-columns: 33.3% 33.3% 33.3%;
 	margin: 20px 20%;
 	height: 300px;
+	text-decoration: none;
 }
 
 
@@ -141,22 +148,19 @@ footer {
 	border-top: 1px solid grey;
 	align-items: baseline;
 	font-size: 1.5rem;
-	margin
+	
+}
+
+.socialLinksActual {
+	width: 60%;
 }
 
 .mediaLogo {
 	height: 28px;
-	width: 8%;
+	width: 7%;
 }
 
 @media screen and (max-width: 900px) {
-	body {
-		background-image: url("https://cdn.pixabay.com/photo/2020/08/28/07/40/waterfall-5523833_1280.jpg");
-	}
-	.mainImage {
-		display: none;
-		
-	}
 	.threeBoxLayout {
 		display: flex;
 		width: 100%;
