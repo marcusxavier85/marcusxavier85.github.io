@@ -9,7 +9,7 @@ body {
 
 .navigationBar {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	background-color: grey;
 	align-items: baseline;
 	position: fixed;
@@ -64,6 +64,7 @@ body {
 .mainImage {
 	display: flex;
 	margin: 5% auto;
+	
 }
 
 .scenicPhoto {
@@ -82,6 +83,7 @@ body {
 	height:200px;
 	padding-left: 20px;
 	flex-direction: column;
+	
 }
 
 .aboutMeTitle {
@@ -137,6 +139,14 @@ footer {
 	margin: 10px 20%;
 	padding-top: 20px;
 	border-top: 1px solid grey;
+	align-items: baseline;
+	font-size: 1.5rem;
+	margin
+}
+
+.mediaLogo {
+	height: 28px;
+	width: 8%;
 }
 
 @media screen and (max-width: 900px) {
