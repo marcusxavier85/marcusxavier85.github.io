@@ -64,11 +64,33 @@ body {
 .mainImage {
 	display: flex;
 	margin: 5% auto;
-	
 }
 
 .scenicPhoto {
 	width: 100%;
+}
+
+.aboutMe {
+	display: grid;
+	grid-template-columns: 30% 70%;
+	margin: 0 20%;
+	height: 300px;
+}
+
+.aboutMeBox {
+	display: flex;
+	height:200px;
+	padding-left: 20px;
+	flex-direction: column;
+}
+
+.aboutMeTitle {
+	justify-content: center;
+}
+
+.pictureOfOwner {
+	max-width: 90%;
+	max-height: 90%;
 }
 
 
