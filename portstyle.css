@@ -10,7 +10,7 @@ body {
 .navigationBar {
 	display: flex;
 	justify-content: center;
-	background-color: grey;
+	background-color: none;
 	align-items: baseline;
 	position: fixed;
 	top: 0;
@@ -51,37 +51,43 @@ body {
 	margin: 0 auto;
 }
 
-.overlayText {
-	position: absolute;
-	top: 200px;
-	left: 200px;
-	width: 300px;
-	height: 100px;
-	
-}
-
-
 .mainImage {
 	display: flex;
-	margin: 0 auto;
-	
-}
-
-.scenicPhoto {
+	justify-content: center;
 	width: 100%;
 }
+
+
+.backgroundImage {
+	background-image: url("https://images.unsplash.com/photo-1592750088063-96b411cd5895?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	width: 100%;
+	padding: 400px 0px;
+}
+
+.overlayText {
+	position: relative;
+	left: 43%;
+	bottom: 80px;
+	color: white;
+	border: 1px solid white;
+	padding: 5px 1%;
+}
+
 
 .aboutMe {
 	display: grid;
 	grid-template-columns: 30% 70%;
-	margin: 0 20%;
-	margin-top: 5%;
+	padding: 0 20%;
+	margin-top: 80% 0%;
 	height: 300px;
+	background-color: white;
 }
 
 .aboutMeBox {
 	display: flex;
-	height:200px;
+	height: 200px;
 	padding-left: 20px;
 	flex-direction: column;
 	
@@ -105,9 +111,9 @@ body {
 .threeBoxLayout {
 	display: grid;
 	grid-template-columns: 33.3% 33.3% 33.3%;
-	margin: 20px 20%;
+	padding: 20px 20%;
 	height: 300px;
-	text-decoration: none;
+	background-color: white;
 }
 
 
@@ -143,11 +149,11 @@ body {
 
 footer {
 	display: flex;
-	margin: 10px 20%;
+	padding: 10px 20%;
 	padding-top: 20px;
-	border-top: 1px solid grey;
 	align-items: baseline;
 	font-size: 1.5rem;
+	background-color: white;
 	
 }
 
