@@ -132,6 +132,13 @@ body {
 	justify-content: center;
 }
 
+footer {
+	display: flex;
+	margin: 10px 20%;
+	padding-top: 20px;
+	border-top: 1px solid grey;
+}
+
 @media screen and (max-width: 900px) {
 	body {
 		background-image: url("https://cdn.pixabay.com/photo/2020/08/28/07/40/waterfall-5523833_1280.jpg");
