@@ -11,6 +11,7 @@ body {
 	font-family: Arial, sans-serif;
 	font-size: 1.2rem;
 	color: white;
+	text-decoration: none;
 }
 
 .navigationBar {
@@ -51,6 +52,7 @@ body {
 	background-image: url("https://images.unsplash.com/photo-1592750088063-96b411cd5895?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	height: 100vh;
 	width: 100%;
 	padding: 400px 0px;
 	z-index: -20;
@@ -65,6 +67,11 @@ body {
 	border: 1px solid white;
 	padding: 0px 1%;
 	z-index: -10;
+}
+
+.overlayText h1 {
+	display: flex;
+	justify-content: center;
 }
 
 
@@ -93,6 +100,7 @@ body {
 	align-self: center;
 }
 
+
 .textAboutMe {
 	display: flex;
 	align-items: center;
@@ -109,7 +117,7 @@ body {
 .threeBoxLayout {
 	display: grid;
 	grid-template-columns: 33.3% 33.3% 33.3%;
-	padding: 20px 20%;
+	padding: 10px 20% 100px 20%;
 	background: #658fa7;
 }
 
@@ -121,49 +129,65 @@ body {
 	justify-content: center;
 }
 
-	
 
-.portImage {
-	display: flex;
-	justify-content: center;
+.portfolioImage {
+	height: 50%;
+	width: 100%;
 }
+
+.portfolioBox {
+	display: flex;
+}
+
+.background {
+	background: #78a6b8;
+	align-items: top;
+	border: 1px solid #c67e59;
+}
+
 
 
 .portfolioText {
 	display: flex;
 	justify-content: center;
-	padding-top: 10px;
+	text-decoration: none;
+	
+}
+
+.portfolioText button {
+	background: #78a6b8;
+	border: none;
+	color: white;
 }
 
 
-footer{
+footer {
 	display: flex;
 	padding: 10px;
 	font-size: 1.5rem;
 	width: 100%;
-	flex-direction: column;
 	background: #22303a;
 	border-top: 2px solid #c67e59;
 	
 }
 
 .socialLinksActual {
-	display: grid;
-	grid-template-columns: 33.3% 33.3% 33.3%;
-	padding: 0 20%;
 	
 }
 
 footer .socialsHeader {
-	align-self: center;
+	justify-content: center;
 	color: white;
 }
 
+.socialLinksActual a {
+	padding: 0px 2% 0px 2%;
+	justify-self: center;
+}
+
 .mediaLogo {
-	width: 80%;
-	height: 80%;
-	padding: 10px;
-	margin-left: 35px;
+	width: 50px;
+	height: 50px;
 }
 
 
