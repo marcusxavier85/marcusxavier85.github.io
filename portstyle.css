@@ -21,9 +21,6 @@ body {
 	border: 2px solid white;
 }
 
-.homeLogo {
-	padding-left: 3%;
-}
 
 .navigationButtons {
 	display: flex;
@@ -104,14 +101,12 @@ body {
 .aboutMe {
 	display: grid;
 	grid-template-columns: 50% 50%;
-	padding: 0 20%;
-	margin: 200px 0;
-	height: 300px;
+	padding: 200px 20% 280px 20%;
+	background: lightgrey;
 }
 
 .aboutMeBox {
 	display: flex;
-	height: 200px;
 	padding-left: 20px;
 	flex-direction: column;
 	
@@ -143,13 +138,10 @@ body {
 }
 
 
-.portfolioImage {
-	object-fit: cover;
-}
-
 .portfolioTitle {
 	display: flex;
 	justify-content: center;
+	margin-top: 50px;
 }
 
 
@@ -206,6 +198,10 @@ body {
 	object-fit: cover;
 }
 
+.portfolioImage {
+	object-fit: cover;
+}
+
 .portfolioText {
 	display: flex;
 	justify-content: center;
@@ -228,8 +224,8 @@ footer {
 }
 
 .mediaLogo {
-	height: 28px;
-	width: 7%;
+	max-width: 20%;
+	max-height: 20%;
 }
 
 @media screen and (max-width: 900px) {
