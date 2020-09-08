@@ -7,25 +7,31 @@ body {
 	margin: 0;
 }
 
+.fontStyleHead {
+	font-family: Arial, sans-serif;
+	font-size: 1.2rem;
+	color: white;
+}
+
 .navigationBar {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	color: white;
-	background: rgb(17, 39, 49);
+	background: #22303a;
 	position: fixed;
 	top: 0;
 	width: 100%;
 	z-index: 10;
-	border: 2px solid white;
+	border-bottom: 2px solid #c67e59;
 }
 
 .navigationBar button {
-	margin: 20px 20px;
-	border-top: 2px solid white;
-	font-family: 'Times New Roman';
-	font-size: 2.0rem;
-	text-decoration: none;
+	margin: 20px auto;
+	font-size: 1.5rem;
+	background: none;
+	color: white;
+	border: none;
 }
 
 .container {
@@ -54,14 +60,11 @@ body {
 }
 
 .overlayText {
+	position: fixed;
 	color: white;
 	border: 1px solid white;
 	padding: 0px 1%;
 	z-index: -10;
-}
-
-.secondOverlayText {
-	position: relative;	
 }
 
 
@@ -69,15 +72,14 @@ body {
 	display: grid;
 	grid-template-columns: 50% 50%;
 	padding: 200px 20% 280px 20%;
-	background: lightgrey;
+	background: #78a6b8;
 }
+
 
 .aboutMeBox {
 	display: flex;
 	padding-left: 20px;
 	flex-direction: column;
-	
-	
 }
 
 .aboutMeTitle {
@@ -96,79 +98,36 @@ body {
 	align-items: center;
 }
 
+.portfolioTitle {
+	display: flex;
+	justify-content: center;
+	padding-top: 50px;
+	background: #658fa7;
+}
+
 
 .threeBoxLayout {
 	display: grid;
 	grid-template-columns: 33.3% 33.3% 33.3%;
 	padding: 20px 20%;
+	background: #658fa7;
+}
+
+
+.threeBoxLayout .portfolioBox {
+	display: flex;
+	padding: 20px 20px;
+	flex-direction: column;
+	justify-content: center;
+}
+
 	
-}
-
-
-.portfolioTitle {
-	display: flex;
-	justify-content: center;
-	margin-top: 50px;
-}
-
-
-
-.leftBox {
-	display: flex;
-	padding: 20px 20px;
-	flex-direction: column;
-	justify-content: center;
-}
-
-.middleBox {
-	display: flex;
-	padding: 20px 20px;
-	flex-direction: column;
-	justify-content: center;
-}
-
-.rightBox {
-	display: flex;
-	padding: 20px 20px;
-	flex-direction: column;
-	justify-content: center;
-}
-
-
-.leftBelowBox {
-	display: flex;
-	padding: 20px 20px;
-	flex-direction: column;
-	justify-content: center;
- 
-}
-
-.middleBelowBox {
-	display: flex;
-	padding: 20px 20px;
-	flex-direction: column;
-	justify-content: center;
-	
-}
-
-.rightBelowBox {
-	display: flex;
-	padding: 20px 20px;
-	flex-direction: column;
-	justify-content: center;
-	
-}
 
 .portImage {
 	display: flex;
 	justify-content: center;
-	object-fit: cover;
-	
 }
 
-.portfolioImage {
-	object-fit: cover;
-}
 
 .portfolioText {
 	display: flex;
@@ -177,26 +136,40 @@ body {
 }
 
 
-footer {
+footer{
 	display: flex;
-	padding: 10px 21.45%;
+	padding: 10px;
 	font-size: 1.5rem;
-	margin-top: 50px;
-	border-bottom: 2px solid black;
+	width: 100%;
+	flex-direction: column;
+	background: #22303a;
+	border-top: 2px solid #c67e59;
 	
 }
 
 .socialLinksActual {
-	width: 60%;
+	display: grid;
+	grid-template-columns: 33.3% 33.3% 33.3%;
+	padding: 0 20%;
 	
 }
 
-.mediaLogo {
-	max-width: 20%;
-	max-height: 20%;
+footer .socialsHeader {
+	align-self: center;
+	color: white;
 }
 
-@media screen and (max-width: 900px) {
+.mediaLogo {
+	width: 80%;
+	height: 80%;
+	padding: 10px;
+	margin-left: 35px;
+}
+
+
+
+
+@media screen and (max-width: 925px) {
 	.threeBoxLayout {
 		display: flex;
 		width: 100%;
@@ -205,6 +178,15 @@ footer {
 		
 	}
 	
-
 }
+
+@media screen and (max-width: 1230px) {
+	.aboutMe {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+		}
+}
+
+
 
