@@ -5,10 +5,15 @@
 body {
 	padding: 0;
 	margin: 0;
-	color: #FFFFFF;
 }
 
 .fontStyleHead {
+	font-family: Arial, sans-serif;
+	font-size: 1.5rem;
+	color: #FFFFFF;
+}
+
+.fontStyleBody {
 	font-family: Arial, sans-serif;
 	font-size: 1.2rem;
 	color: #FFFFFF;
@@ -18,7 +23,6 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	color: #FFFFFF;
 	background: #22303a;
 	position: fixed;
 	top: 0;
@@ -29,7 +33,6 @@ body {
 
 .navigationBar a {
 	margin: 20px 2%;
-	font-size: 1.5rem;
 	background: none;
 	border: none;
 	text-decoration: none;
@@ -65,7 +68,6 @@ body {
 .overlayText h1 {
 	display: flex;
 	justify-content: center;
-	font-size: 1.5rem;
 }
 
 
@@ -93,6 +95,7 @@ body {
 	width: 100%;
 	height: 100%;
 	align-self: center;
+	border: 2px solid #c67e59;
 }
 
 
@@ -109,7 +112,7 @@ body {
 }
 
 
-.threeBoxLayout {
+.sixBoxLayout {
 	display: grid;
 	grid-template-columns: 33.3% 33.3% 33.3%;
 	padding: 10px 20% 100px 20%;
@@ -117,7 +120,7 @@ body {
 }
 
 
-.threeBoxLayout .portfolioBox {
+.sixBoxLayout .portfolioBox {
 	display: flex;
 	padding: 20px 20px;
 	flex-direction: column;
@@ -129,7 +132,7 @@ body {
 	grid-template-rows: 1fr 1fr;
 	background: #78a6b8;
 	align-items: flex-start;
-	border: 1px solid #c67e59;
+	border: 2px solid #c67e59;
 	height: 400px;
 }
 
@@ -137,6 +140,7 @@ body {
 	object-fit: cover;
 	height: 200px;
 	width: 100%;
+	border-bottom: 2px solid #c67e59;
 }
 
 
@@ -144,7 +148,6 @@ body {
 	display: flex;
 	justify-content: center;
 	text-decoration: none;
-	color: #FFFFFF;
 	
 }
 
@@ -185,11 +188,12 @@ footer {
 	width: 100%;
 	height: 70%;
 	place-self: center;
+	border: 2px solid #c67e59;
 }
 
 @media screen and (max-width: 1100px) {
 	
-	.threeBoxLayout {
+	.sixBoxLayout {
 		display: flex;
 		width: 100%;
 		grid-template-columns: 100%;
@@ -200,9 +204,9 @@ footer {
 	
 @media screen and (max-width: 1100px) {
 	.aboutMe {
-			display: grid;
-			grid-template-columns: 1fr;
-		}
+		display: grid;
+		grid-template-columns: 1fr;
+	}
 }
 	
 
