@@ -144,11 +144,11 @@ body {
 	display: flex;
 	justify-content: center;
 	text-decoration: none;
+	color: #FFFFFF;
 	
 }
 
 .portfolioText a {
-	color: #FFFFFF;
 	text-decoration: none;
 }
 
