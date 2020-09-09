@@ -5,6 +5,7 @@
 body {
 	padding: 0;
 	margin: 0;
+	color: #FFFFFF;
 }
 
 .fontStyleHead {
@@ -26,11 +27,12 @@ body {
 	border-bottom: 2px solid #c67e59;
 }
 
-.navigationBar button {
+.navigationBar a {
 	margin: 20px auto;
 	font-size: 1.5rem;
 	background: none;
 	border: none;
+	text-decoration: none;
 }
 
 
@@ -145,10 +147,9 @@ body {
 	
 }
 
-.portfolioText button {
-	background: #78a6b8;
-	border: none;
-	color: white;
+.portfolioText a {
+	color: #FFFFFF;
+	text-decoration: none;
 }
 
 
@@ -206,7 +207,7 @@ footer {
 	
 
 @media screen and (max-width: 400px) {
-	.navigationBar button {
+	.navigationBar a {
 		padding: 3px;
 		margin: 1%;
 		
