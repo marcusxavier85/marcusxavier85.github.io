@@ -10,15 +10,14 @@ body {
 .fontStyleHead {
 	font-family: Arial, sans-serif;
 	font-size: 1.2rem;
-	color: white;
-	text-decoration: none;
+	color: #FFFFFF;
 }
 
 .navigationBar {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	color: white;
+	color: #FFFFFF;
 	background: #22303a;
 	position: fixed;
 	top: 0;
@@ -48,7 +47,6 @@ body {
 	background-attachment: fixed;
 	height: 100vh;
 	width: 100%;
-	padding: 400px 0px;
 	z-index: -20;
 	display: flex;
 	justify-content: center;
@@ -73,6 +71,7 @@ body {
 	display: grid;
 	grid-template-columns: 50% 50%;
 	padding: 200px 20% 280px 20%;
+	column-gap: 20px;
 	background: #78a6b8;
 }
 
@@ -89,7 +88,7 @@ body {
 }
 
 .pictureOfOwner {
-	width: 50%;
+	width: 100%;
 	height: 100%;
 	align-self: center;
 }
@@ -187,11 +186,7 @@ footer {
 	place-self: center;
 }
 
-@media screen and (max-width: 1388px) {
-	.aboutMe {
-			display: grid;
-			grid-template-columns: 1fr;
-		}
+@media screen and (max-width: 1100px) {
 	
 	.threeBoxLayout {
 		display: flex;
@@ -200,6 +195,14 @@ footer {
 		flex-direction: column;
 		
 	}
+}
+	
+@media screen and (max-width: 1100px) {
+	.aboutMe {
+			display: grid;
+			grid-template-columns: 1fr;
+		}
+}
 	
 
 @media screen and (max-width: 400px) {
@@ -211,6 +214,14 @@ footer {
 	.overlayText {
 		top: 41%;
 	}
+	
+	.pictureOfOwner {
+		width: 100%;
+		height: 100%;
+		align-self: center;
+	}
+}
+	
 
 
 
