@@ -5,10 +5,15 @@
 body {
 	padding: 0;
 	margin: 0;
-	color: #FFFFFF;
 }
 
 .fontStyleHead {
+	font-family: Arial, sans-serif;
+	font-size: 1.5rem;
+	color: #FFFFFF;
+}
+
+.fontStyleBody {
 	font-family: Arial, sans-serif;
 	font-size: 1.2rem;
 	color: #FFFFFF;
@@ -18,7 +23,6 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	color: #FFFFFF;
 	background: #22303a;
 	position: fixed;
 	top: 0;
@@ -28,13 +32,11 @@ body {
 }
 
 .navigationBar a {
-	margin: 20px auto;
-	font-size: 1.5rem;
+	margin: 20px 2%;
 	background: none;
 	border: none;
 	text-decoration: none;
 }
-
 
 .mainImage {
 	display: flex;
@@ -42,9 +44,8 @@ body {
 	width: 100%;
 }
 
-
 .backgroundImage {
-	background-image: url("https://images.unsplash.com/photo-1592750088063-96b411cd5895?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+	background-image: url("file:///Users/academy/Documents/photo-1592750088063-96b411cd5895.htm");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	height: 100vh;
@@ -58,16 +59,14 @@ body {
 .overlayText {
 	position: fixed;
 	border: 1px solid white;
-	padding: 0px 1%;
+	padding: 0 1%;
 	z-index: -10;
 }
 
 .overlayText h1 {
 	display: flex;
 	justify-content: center;
-	font-size: 1.5rem;
 }
-
 
 .aboutMe {
 	display: grid;
@@ -76,7 +75,6 @@ body {
 	column-gap: 20px;
 	background: #78a6b8;
 }
-
 
 .aboutMeBox {
 	display: flex;
@@ -93,8 +91,8 @@ body {
 	width: 100%;
 	height: 100%;
 	align-self: center;
+	border: 2px solid #c67e59;
 }
-
 
 .textAboutMe {
 	display: flex;
@@ -108,16 +106,14 @@ body {
 	background: #658fa7;
 }
 
-
-.threeBoxLayout {
+.sixBoxLayout {
 	display: grid;
 	grid-template-columns: 33.3% 33.3% 33.3%;
 	padding: 10px 20% 100px 20%;
 	background: #658fa7;
 }
 
-
-.threeBoxLayout .portfolioBox {
+.sixBoxLayout .portfolioBox {
 	display: flex;
 	padding: 20px 20px;
 	flex-direction: column;
@@ -129,7 +125,7 @@ body {
 	grid-template-rows: 1fr 1fr;
 	background: #78a6b8;
 	align-items: flex-start;
-	border: 1px solid #c67e59;
+	border: 2px solid #c67e59;
 	height: 400px;
 }
 
@@ -137,34 +133,37 @@ body {
 	object-fit: cover;
 	height: 200px;
 	width: 100%;
+	border-bottom: 2px solid #c67e59;
 }
-
 
 .portfolioText {
 	display: flex;
 	justify-content: center;
 	text-decoration: none;
-	color: #FFFFFF;
-	
 }
 
 .portfolioText a {
 	text-decoration: none;
 }
 
-
 footer {
 	display: grid;
-	grid-template-rows: 20% 80%;
+	grid-template-rows: 30% 70%;
 	width: 100%;
 	background: #22303a;
 	border-top: 2px solid #c67e59;
 }
 	
 .socialsHeader {
+	display: flex;
 	justify-self: center;
 	align-self: center;
-	margin-top: 20px;
+	margin: 20px 0;
+	font-size: 1rem;
+}
+
+.socialsHeader h2 {
+	margin: 0;
 }
 
 .socialLinksActual {
@@ -173,53 +172,50 @@ footer {
 	display: grid;
 	grid-template-columns: 10% 10% 10%;
 	column-gap: 10px;
-	margin: 20px 10% 10px 10%;
-	
-}
-
-.socialLinksActual a {
-	display: grid;
+	margin: 0 10% 10px 10%;
 }
 
 .mediaLogo {
+	object-fit: cover;
+	height: 50px;
 	width: 100%;
-	height: 70%;
-	place-self: center;
+	border: 2px solid #c67e59;
 }
 
 @media screen and (max-width: 1100px) {
-	
-	.threeBoxLayout {
+	.sixBoxLayout {
 		display: flex;
 		width: 100%;
 		grid-template-columns: 100%;
+		flex-direction: column;	
+	}
+	.aboutMe {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	.socialLinksActual {
+		display: flex;
 		flex-direction: column;
-		
+		justify-content: center;
+		padding: 0 30%;
 	}
 }
 	
-@media screen and (max-width: 1100px) {
-	.aboutMe {
-			display: grid;
-			grid-template-columns: 1fr;
-		}
-}
-	
-
 @media screen and (max-width: 400px) {
 	.navigationBar a {
 		padding: 3px;
-		margin: 1%;
-		
+		margin: 1%;	
 	}
-	.overlayText {
-		top: 41%;
-	}
-	
 	.pictureOfOwner {
 		width: 100%;
 		height: 100%;
 		align-self: center;
+	}
+	.socialLinksActual {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 0 20%;
 	}
 }
 	
