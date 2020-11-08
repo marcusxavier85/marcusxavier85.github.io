@@ -1,0 +1,20 @@
+{
+  "short_name": "MBP",
+  "name": "Marcus Bowyer's Portfolio",
+  "icons": [
+    {
+      "src": "iamge goes here",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "another image here",
+      "type": "image/png",
+      "sizes": "144x144"
+    }
+  ],
+  "start_url": "/portfolio.html",
+  "background_color": "#000000",
+  "display": "standalone",
+  "theme_color": "#4dbaa8"
+}

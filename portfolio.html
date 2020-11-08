@@ -1,12 +1,18 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link href="normalize.css" type="text/css" rel="stylesheet">
-  <link href="portstyle.css" type="text/css" rel="stylesheet">
-  
+  	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<title>Marcus Bowyer's Portfolio</title>
+  	<link href="normalize.css" type="text/css" rel="stylesheet">
+  	<link href="portstyle.css" type="text/css" rel="stylesheet">
+	<link rel="manifest" href="manifest.json">
+	<script>
+		if('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('portfolioJS.js');
+		};
+	</script>
+	<script href="portfolioJS.js" defer></script>
 </head>
 <body>
 
@@ -37,7 +43,7 @@
 		</div>
 
 		<div class="textAboutMe fontStyleBody">
-			<p>Hello my name is marcus and im a very dependable bloke you cna coinnt on me yes sir! SIKE get fucking Stick Bugged LOLjenagu nanrguao iraoubguoaerb nriopangpoeru nvrioaeungorae raueig rngioawngrpaiogn rnaignraeiogn rigoanoir rgao eiurbgo ragogaoie rng nrioagniroa ngraiognioraeng  rioangiaoerngrn gireang agnria ignarignro aignaioe nggnir ao;gnraiogngirona iong;raoi </p>
+			<p>Hello! Thank you for checking out my Portfolio! My name is Marcus and I'm a budding software developer.</p>
 		</div>
 	</section>
 		
@@ -48,9 +54,9 @@
 	<section class="sixBoxLayout">
 		<div class="portfolioBox">
 			<div class="background">
-				<a href="#"><img src="photo-1599582723610-cd7a469c5016.htm" alt="Portfolio Image" class="portfolioImage"></a>
+				<a href="http://localhost:1234/databaseProject/pokedexDataBaseProject.php"><img src="databaseScreenshot.png" alt="Portfolio Image" class="portfolioImage"></a>
 				<div class="sixBoxText">
-					<a href="#" class="portfolioText fontStyleBody">Project is on the way!</a>
+					<a href="http://localhost:1234/databaseProject/pokedexDataBaseProject.php" class="portfolioText fontStyleBody">Pokedex Database</a>
 				</div>
 			</div>	
 		</div>	
