@@ -1,7 +1,7 @@
 self.addEventListener('install', (e) => {
     e.waitUntil(
         caches.open('sw-cache').then((cache) => {
-            return cache.add('portfolio.html');
+            return cache.add('index.html');
             return cache.add('portstyle.css');
         })
     );
