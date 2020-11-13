@@ -1,8 +1,7 @@
 self.addEventListener('install', (e) => {
     e.waitUntil(
         caches.open('sw-cache').then((cache) => {
-            return cache.add('index.html');
-            return cache.add('portstyle.css');
+            return cache.add('index.html') && cache.add('portstyle.css');
         })
     );
 });
@@ -10,7 +9,11 @@ self.addEventListener('install', (e) => {
 self.addEventListener('fetch', (e) => {
     e.respondWith(
         caches.match(e.request).then((response) => {
-            return response || fetch(e.request);
+            if (response) {
+                return response;
+            } else {
+                return fetch(e.request);
+            }
         })
     )
-})
+});

@@ -1,0 +1,58 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+}
+
+.pokemonFont {
+    font-family: Impact;
+    font-size: 1.2rem;
+    color: #ff0000;
+}
+
+.backgroundImage {
+    background-image: url("levelUpPokemon.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+}
+
+.formHeader {
+    display: flex;
+    justify-content: center;
+}
+
+.backToPokedexButton {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.formFormat {
+    display: flex;
+    padding: 0 30%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formInputs {
+    display: flex;
+    justify-content: center;
+    margin: 3% 0;
+}
+
+.checkboxType {
+    align-items: center;
+}
+
+.formTypes {
+    padding: 10px;
+}
