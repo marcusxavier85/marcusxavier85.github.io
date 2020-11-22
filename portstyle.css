@@ -115,48 +115,41 @@ body {
 
 .sixBoxLayout {
 	display: grid;
-	grid-template-columns: 33.3% 33.3% 33.3%;
-	padding: 10px 20% 100px 20%;
+	grid-template-columns: 100%;
 	background: #658fa7;
 }
 
-.sixBoxLayout .portfolioBox {
-	display: flex;
-	padding: 20px 20px;
-	flex-direction: column;
-	justify-content: center;
-}
-
-.background {
+.portfolioBox {
 	display: grid;
-	grid-template-rows: 1fr 1fr;
-	background: #78a6b8;
-	align-items: flex-start;
-	border: 2px solid #c67e59;
-	height: 400px;
+	grid-template-columns: 50% 50%;
+	justify-content: center;
+	height: 300px;
 }
 
-.background img {
+.portfolioImage {
 	object-fit: cover;
-	height: 200px;
 	width: 100%;
-	border-bottom: 2px solid #c67e59;
+	height: 300px;
 }
 
 a:hover {
 	color: #c67e59;
 }
 
-.portfolioText {
+.portfolioHeader {
 	display: flex;
-	padding: 0px 5px;
+	padding: 10px 5px;
 	text-decoration: none;
 	text-align: center;
 	justify-content: center;
 }
 
-.portfolioText a {
+.portfolioHeader a {
 	text-decoration: none;
+}
+
+.portfolioText {
+	padding: 0px 10px;
 }
 
 footer {
@@ -190,22 +183,28 @@ footer {
 	padding: 0 10px;
 }
 
-@media screen and (max-width: 1164px) {
-	.sixBoxLayout {
-		display: grid;
-		width: 100%;
-		grid-template-columns: 50% 50%;
-		flex-direction: column;	
-	}
-}
-
 @media screen and (max-width: 768px) {
-	.sixBoxLayout {
+/*	.right {*/
+/*		display: flex;*/
+/*		flex-direction: column;*/
+/*		margin-top: 100px;*/
+/*		height: 300px;*/
+/*	}*/
+
+/*	.left {*/
+/*		display: flex;*/
+/*		flex-direction: column-reverse;*/
+/*		margin-top: 100px;*/
+/*		height: 300px;*/
+/*	}*/
+
+	.portfolioBox {
 		display: grid;
-		width: 100%;
 		grid-template-columns: 100%;
-		flex-direction: column;
+		justify-content: center;
+		height: 300px;
 	}
+
 	.aboutMe {
 		display: grid;
 		grid-template-columns: 1fr;
