@@ -77,10 +77,15 @@ body {
 
 .aboutMe {
 	display: grid;
-	grid-template-columns: 50% 50%;
-	padding: 200px 20% 280px 20%;
+	grid-template-columns: 100%;
+	padding: 100px 20% 100px 20%;
 	column-gap: 20px;
 	background: #78a6b8;
+}
+
+.aboutMeTitle {
+	display: flex;
+	justify-content: center;
 }
 
 .aboutMeBox {
@@ -95,41 +100,53 @@ body {
 }
 
 .pictureOfOwner {
-	width: 100%;
+	width: 50%;
 	height: 100%;
 	align-self: center;
 	border: 2px solid #c67e59;
+	min-width: 228px;
+	min-height: 228px;
 }
 
 .textAboutMe {
 	display: flex;
-	align-items: center;
+	text-align: justify;
 }
 
 .portfolioTitle {
-	display: flex;
-	justify-content: center;
+	display: grid;
+	grid-template-columns: 100%;
 	padding-top: 50px;
 	background: #658fa7;
 }
 
-.sixBoxLayout {
-	display: grid;
-	grid-template-columns: 100%;
-	background: #658fa7;
+.portfolioTextHeader {
+	justify-self: center;
+	margin: 0;
 }
 
-.portfolioBox {
+.portfolioTextAssistance {
+	justify-self: center;
+	margin: 20px 0 50px 0;
+	padding: 0 10px 0 10px;
+	height: auto;
+	text-align: center;
+}
+
+.sixBoxLayout {
 	display: grid;
 	grid-template-columns: 50% 50%;
-	justify-content: center;
-	height: 300px;
+	background: #658fa7;
 }
 
 .portfolioImage {
 	object-fit: cover;
 	width: 100%;
 	height: 300px;
+}
+
+.displayGameTwo {
+	display: none;
 }
 
 a:hover {
@@ -150,6 +167,7 @@ a:hover {
 
 .portfolioText {
 	padding: 0px 10px;
+	text-align: justify;
 }
 
 footer {
@@ -184,25 +202,25 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-/*	.right {*/
-/*		display: flex;*/
-/*		flex-direction: column;*/
-/*		margin-top: 100px;*/
-/*		height: 300px;*/
-/*	}*/
-
-/*	.left {*/
-/*		display: flex;*/
-/*		flex-direction: column-reverse;*/
-/*		margin-top: 100px;*/
-/*		height: 300px;*/
-/*	}*/
-
-	.portfolioBox {
+	.sixBoxLayout {
 		display: grid;
 		grid-template-columns: 100%;
-		justify-content: center;
+	}
+
+	.img-container {
 		height: 300px;
+	}
+
+	.portfolioText {
+		text-align: center;
+	}
+
+	.displayGameOne {
+		display: none;
+	}
+
+	.displayGameTwo {
+		display: block;
 	}
 
 	.aboutMe {
@@ -212,7 +230,7 @@ footer {
 	.textAboutMe {
 		display: flex;
 		align-items: center;
-		text-align: center;
+		text-align: justify;
 	}
 
 }
