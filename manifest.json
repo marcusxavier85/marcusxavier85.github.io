@@ -3,12 +3,12 @@
   "name": "Marcus Bowyer's Portfolio",
   "icons": [
     {
-      "src": "image goes here",
+      "src": "favicon.png",
       "type": "image/png",
       "sizes": "144x144"
     },
     {
-      "src": "another image here",
+      "src": "favicon.png",
       "type": "image/png",
       "sizes": "144x144"
     }
